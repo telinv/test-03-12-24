@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-image: url("assets/background2.png"),
+                      url("assets/background1.png");
+    height: 100vh;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100vw; */
+    padding: 2rem;
+}
+
+.nav__ul, .nav__ul li{
+    display: flex;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    padding: 1rem;
+    font-family: "Open Sans", Arial,  sans-serif;
+    font-weight: 300;
+    font-size: small;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 2rem; */
+}
+
+.h1__header, .h2__header, .p__header, .header__ul li, label, .header__btn{
+    font-family: "Open Sans", Arial,  sans-serif;
+}
+
+.h1__header{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 35pt;
+}
+.h2__header{
+    color: rgba(150, 154, 247, 1);
+    font-weight: 700;
+    font-size: 30pt;
+
+}
+.p__header{
+    color: rgba(150, 154, 247, 1);
+    font-weight: 400;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.header__ul{
+    /* background-image: url("assets/gradient.png");
+    background-repeat: no-repeat; */
+    padding-left: 2rem;
+    background: linear-gradient(to right, rgb(150, 154, 247, 0.3), rgba(150, 154, 247, 0));
+    border-radius: 10px;
+
+
+}
+.header__ul li{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    padding: 1%;
+}
+.li__check{
+    padding-right: 1%;
+    height: 10px;
+    width: 10px;
+}
+
+
+.header__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28vw;
+    height: 40vh;
+    background-color: rgba(242, 243, 245, 1);
+    border-radius: 0 0 10px  10px;
+    padding: 2rem;
+    gap: 0.6rem;
+}
+.label__header{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    width: 28vw;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px  10px 0 0;
+    background: linear-gradient(rgba(106, 50, 180, 1), rgba(85, 38, 147, 1));
+}
+
+.header__btn{
+    background-color: rgba(255, 165, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+
+input{
+    padding-left: 1rem;
+}
+
+input, .header__btn{
+    height: 8vh;
+    border-radius: 10px;
+    border: none;
+}
