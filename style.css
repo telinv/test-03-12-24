@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-color: rgba(242, 242, 244, 1);
+}
+
 /* header styles */
 
 .header{
@@ -129,6 +133,7 @@ input, .header__btn, .footer__btn{
     background-image: url("assets/background__main.png");
     background-size: cover;
     padding: 7rem;
+    margin-top: -4rem;
  }
 
  .container__3cards{
@@ -174,7 +179,7 @@ width: 5rem;
     gap: 3rem;
  }
 
- .container2__title{
+ .container2__title, .container4__title {
     color: rgba(255, 255, 255, 1);
     font-size: 30pt;
  }
@@ -200,10 +205,28 @@ width: 5rem;
     padding: 7rem;
     gap: 3rem;
  }
+
+ .container3__title{
+    font-size: 30pt;
+ }
+
  .container3__btn{
     height: 3rem;
     width: 15%;
     border: none;
+ }
+
+ .main__container4{
+    background-image: url("assets/background4.2.png"),
+                    url("assets/background4.1.png");
+     background-size: cover;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 7rem;
+    gap: 3rem;
+    margin-top: -4rem;
  }
 
  /* footer */
