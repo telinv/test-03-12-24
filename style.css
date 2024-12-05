@@ -16,11 +16,15 @@ body{
     height: 100vh;
 }
 
-.nav{
+.nav , .nav__footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
+}
+
+.nav{
+    position: fixed;
 }
 
 .nav__ul, .nav__ul li{
@@ -36,6 +40,7 @@ body{
 .header__container{
     display: flex;
     justify-content: space-around;
+    padding-top: 7rem;
 }
 
 .container1{
@@ -43,7 +48,7 @@ body{
     flex-direction: column;
 }
 
-h1, h2, h3, h4, p, button, .header__ul li, label{
+h1, h2, h3, h4, p, button, .header__ul li, label, summary, details{
     font-family: "Open Sans", Arial,  sans-serif;
 }
 
@@ -133,7 +138,7 @@ input, .header__btn, .footer__btn{
     background-image: url("assets/background__main.png");
     background-size: cover;
     padding: 7rem;
-    margin-top: -4rem;
+    margin-top: -3rem;
  }
 
  .container__3cards{
@@ -181,18 +186,25 @@ width: 5rem;
 
  .container2__title, .container4__title {
     color: rgba(255, 255, 255, 1);
-    font-size: 30pt;
+    font-size: 25pt;
  }
 
  .container2__paragraph{
     color: rgba(255, 255, 255, 1);
+    font-size: 10pt;
  }
 
  .container2__imgs{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+ }
+ .img__manufacturers{
+    width: 80%;
+ }
+
+ .img__pointer{
+    width: 2rem;
  }
 
  .main__container3{
@@ -203,17 +215,20 @@ width: 5rem;
     align-items: center;
     text-align: center;
     padding: 7rem;
-    gap: 3rem;
+    gap: 1rem;
  }
 
  .container3__title{
-    font-size: 30pt;
+    font-size: 25pt;
  }
 
  .container3__btn{
     height: 3rem;
     width: 15%;
     border: none;
+ }
+ .blocks__img{
+    width: 80%;
  }
 
  .main__container4{
@@ -227,6 +242,25 @@ width: 5rem;
     padding: 7rem;
     gap: 3rem;
     margin-top: -4rem;
+ }
+ .FAQ__summary{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(189, 192, 255, 1));
+    height: 3rem;
+    width: 85vw;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+ }
+ .FAQ__summary:focus{
+    background: linear-gradient(rgba(150, 154, 247, 1), rgba(104, 110, 236, 1));
+    color: rgba(255, 255, 255, 1);
+ }
+
+ .FAQ__details{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
  }
 
  /* footer */
@@ -242,3 +276,231 @@ width: 5rem;
     background-color: rgba(150, 154, 247, 1);
     color: rgba(255, 255, 255, 1);
   }
+  @media (max-width: 1200px) {
+    .nav {
+        padding: 1.5rem;
+    }
+
+    .header {
+        height: 80vh; 
+    }
+
+    .header__form {
+        width: 40vw;
+        height: 35vh;
+    }
+
+    .container__3cards {
+        gap: 2rem;
+    }
+
+    .main__title {
+        font-size: 24pt; 
+    }
+    .main__container1{
+        margin-top: -6rem;
+    }
+}
+
+/* Медиазапрос для планшетов (768px - 1024px) */
+@media (max-width: 1024px) {
+    .nav {
+        flex-wrap: wrap;
+        font-size: small;
+    }
+    .tel__img{
+        display: none;
+    }
+
+    .header {
+        background-size: cover;
+        height: auto;
+    }
+
+    .h1__header{
+        font-size: 20pt;
+    }
+
+    .h2__header{
+        font-size: 15pt;
+    }
+    .p__header{
+        font-size: small;
+    }
+    .label__header{
+        width: 30vw; 
+    }
+    input, .header__btn{
+        height: 3rem;
+    }
+    .header__form {
+        width: 30vw; 
+        height: 25vh;
+    }
+
+    .header__container {
+        align-items: center;
+        text-align: center;
+        height: 60vh;
+        padding-top: 3rem;
+    }
+
+    .main__container1 {
+        padding: 8rem;
+        margin: -8rem;
+    }
+
+    .container__3cards {
+        gap: 1.5rem;
+    }
+
+    .main__cards {
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .container2__imgs {
+        flex-wrap: wrap;
+    }
+    .footer__btn{
+        height: 3rem;
+    }
+
+    .logo{
+        width: 20vw;
+    }
+    .footer__logo{
+        display: none;
+    }
+
+}
+
+/* Медиазапрос для мобильных устройств (480px - 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem;
+        height: auto;
+    }
+    .tel__img{
+        display: none;
+    }
+
+    .nav {
+        flex-direction: column; /* Навигация переходит в вертикальное расположение */
+        align-items: center;
+    }
+
+    .header__form {
+        width: 80%; /* Форма занимает почти всю ширину экрана */
+        height: auto; /* Высота подстраивается */
+        padding: 1rem;
+    }
+
+    .header__btn, input {
+        height: 6vh; /* Кнопки и инпуты становятся меньше */
+    }
+
+    .container__3cards {
+        flex-direction: column; /* Карточки располагаются в одну колонку */
+        gap: 1rem;
+    }
+
+    .main__title {
+        font-size: 18pt;
+    }
+
+    .card__title {
+        font-size: 10pt;
+    }
+
+    .container2__title, .container4__title {
+        font-size: 20pt;
+    }
+
+    .FAQ__summary {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .nav {
+
+        padding: 0.5rem;
+        justify-content: center;
+    }
+    .nav__ul li{
+        padding: 0.3rem;
+        font-size: 5pt;
+    }
+    .tel__img{
+        display: none;
+    }
+
+    .header {
+        background-position: center;
+        padding: 0;
+    }
+    .header__container{
+        flex-direction: column;
+        height: 140vh;
+        padding-top: 0;
+    }
+
+    .container1{
+        margin-top: -2rem;
+    }
+
+    .p__header{
+        font-size: small;
+        padding: 4px;
+    }
+
+    .header__ul{
+        padding-left: 0;
+        font-size: small;
+    }
+
+    .label__header{
+        width: 70vw;
+        height: 0;
+        margin-top: -18rem;
+    }
+
+    .header__form {
+        width: 90%; 
+        padding: 1rem;
+        height: auto;
+    }
+
+    .header__btn, input {
+        font-size: small;
+        height: 5vh;
+    }
+
+    .main__container2, .main__container3, .main__container4 {
+        padding: 2rem;
+    }
+
+    .main__cards {
+        padding: 0.5rem;
+        width: 100%; /* Карточки занимают 100% ширины */
+    }
+
+    .main__title,.container3__title, .container2__title, .container4__title {
+        font-size: 12pt;
+    }
+
+    .card__title {
+        font-size: 9pt;
+    }
+
+    .container3__btn {
+        width: 80%; /* Кнопки занимают большую часть экрана */
+    }
+
+    .FAQ__summary {
+        font-size: smaller;
+        width: 100%;
+    }
+}
