@@ -21,26 +21,35 @@ body{
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
+    width: 97vw;
 }
 
 .nav{
     position: fixed;
+    font-size: 4vh;
 }
+.logo, .tel__img{
+    height: 4vh;
+
+}
+
 
 .nav__ul, .nav__ul li{
     display: flex;
+    justify-content: space-between;
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     padding: 1rem;
+    gap: 3rem;
     font-family: "Open Sans", Arial,  sans-serif;
     font-weight: 300;
-    font-size: small;
+    font-size: 2vh;
 }
 
 .header__container{
     display: flex;
     justify-content: space-around;
-    padding-top: 7rem;
+    padding-top: 13rem;
 }
 
 .container1{
@@ -55,27 +64,27 @@ h1, h2, h3, h4, p, button, .header__ul li, label, summary, details{
 .h1__header{
     color: rgba(255, 255, 255, 1);
     font-weight: 700;
-    font-size: 35pt;
+    font-size: 9vh;
 }
 .h2__header{
     color: rgba(150, 154, 247, 1);
     font-weight: 700;
-    font-size: 30pt;
+    font-size: 7vh;
 
 }
 .p__header{
     color: rgba(150, 154, 247, 1);
     font-weight: 400;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    font-size: 3vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .header__ul{
     padding-left: 2rem;
     background: linear-gradient(to right, rgb(150, 154, 247, 0.3), rgba(150, 154, 247, 0));
     border-radius: 10px;
-
-
+    font-size: 3vh;
 }
 .header__ul li{
     display: flex;
@@ -86,30 +95,41 @@ h1, h2, h3, h4, p, button, .header__ul li, label, summary, details{
 }
 .li__check{
     padding-right: 1%;
-    height: 10px;
-    width: 10px;
+    height: 2vh;
+    width: 2vh;
 }
-
-
+.garat{
+    width: 70%;
+}
 .header__form{
     display: flex;
+    flex: 1 1 0px;
     flex-direction: column;
     justify-content: space-between;
-    width: 28vw;
+    width: 29vw + 1px;
     height: 40vh;
     background-color: rgba(242, 243, 245, 1);
-    border-radius: 0 0 10px  10px;
-    padding: 2rem;
+    border-radius: 0 0 20px  20px;
+    padding: 4rem;
     gap: 0.6rem;
+}
+
+.header__form, .header__btn, input{
+    font-size: 2vh;
 }
 .label__header{
     display: flex;
+    flex: 1 1 0px;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 2rem;
-    width: 28vw;
+    height: 7vh;
+    width: 30vw;
     font-weight: 600;
+    font-size: 3vh;
     color: rgba(255, 255, 255, 1);
-    border-radius: 10px  10px 0 0;
+    border-radius: 20px  20px 0 0;
     background: linear-gradient(rgba(106, 50, 180, 1), rgba(85, 38, 147, 1));
 }
 
@@ -140,37 +160,40 @@ input, .header__btn, .footer__btn{
     background-attachment: fixed;
     padding: 7rem;
     margin-top: -3rem;
+    height: 100vh;
  }
 
  .container__3cards{
     display: flex;
     gap: 3rem;
+    /* min-height: 90vh; */
  }
 
  .main__title{
-    font-size: 28pt;
+    font-size: 8vh;
     font-weight: 700;
  }
 
- .card__title{
+ .container1__descr,.card__title, .container3__paragraph{
     color: rgba(42, 51, 108, 1);
     font-weight: 700;
-    font-size: 12pt;
+    font-size: 3vh;
  }
 
 .card__descr{
     font-weight: 300;
-    font-size: 9pt;
+    font-size: 3vh;
+    background-image: url("assets/card__container.png");
+    background-repeat: no-repeat;
 }
 
 .card__icon{
-height: 5rem;
-width: 5rem;
+height: 15vh;
+width: 8vw;
 }
 
  .main__cards{
     padding: 1rem;
-    background-image: url("assets/card__container.png");
  }
 
  .main__container2{
@@ -181,18 +204,19 @@ width: 5rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 7rem;
+    padding: 13rem;
     gap: 3rem;
+    height: 80vh;
  }
 
  .container2__title, .container4__title {
     color: rgba(255, 255, 255, 1);
-    font-size: 25pt;
+    font-size: 8vh;
  }
 
  .container2__paragraph{
     color: rgba(255, 255, 255, 1);
-    font-size: 10pt;
+    font-size: 2vh;
  }
 
  .container2__imgs{
@@ -201,11 +225,12 @@ width: 5rem;
     align-items: center;
  }
  .img__manufacturers{
-    width: 80%;
+    padding-top: 3vh;
+    width: 80vw;
  }
 
  .img__pointer{
-    width: 2rem;
+    width: 3vw;
  }
 
  .main__container3{
@@ -216,20 +241,23 @@ width: 5rem;
     align-items: center;
     text-align: center;
     padding: 7rem;
-    gap: 1rem;
+    gap: 3vh;
  }
 
  .container3__title{
-    font-size: 25pt;
+    font-size: 7vh;
  }
 
  .container3__btn{
-    height: 3rem;
+    height: 5vh;
     width: 15%;
     border: none;
+    border-radius: 20px;
+    font-size: 2vh;
  }
  .blocks__img{
-    width: 80%;
+    height: 50vh;
+    width: 65vw;
  }
 
  .main__container4{
@@ -240,19 +268,21 @@ width: 5rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 7rem;
+    padding: 20rem;
     gap: 3rem;
     margin-top: -4rem;
+    height: 90vh;
  }
  .FAQ__summary{
     display: flex;
     align-items: center;
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(189, 192, 255, 1));
-    height: 3rem;
+    height: 8vh;
     width: 85vw;
     padding: 1rem;
     font-weight: bold;
-    border-radius: 10px;
+    font-size: 3vh;
+    border-radius: 20px;
  }
  .FAQ__summary:focus{
     background: linear-gradient(rgba(150, 154, 247, 1), rgba(104, 110, 236, 1));
@@ -261,12 +291,16 @@ width: 5rem;
 
  .FAQ__details{
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 10px;
+    border-radius: 20px;
+    font-size: 2vh;
  }
 
  /* footer */
  footer{
     background-color: rgba(51, 51, 51, 1);
+ }
+ .footer__logo{
+    height: 3vh;
  }
   .footer__btn{
     display: flex;
@@ -274,10 +308,12 @@ width: 5rem;
     text-align: center;
     justify-content: center;
     width: 16vw;
+    font-size: 2vh;
+    border-radius: 20px;
     background-color: rgba(150, 154, 247, 1);
     color: rgba(255, 255, 255, 1);
   }
-  @media (max-width: 1200px) {
+  /* @media (max-width: 1200px) {
     .nav {
         padding: 1.5rem;
     }
@@ -301,10 +337,10 @@ width: 5rem;
     .main__container1{
         margin-top: -6rem;
     }
-}
+} */
 
 /* Медиазапрос для планшетов (768px - 1024px) */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .nav {
         flex-wrap: wrap;
         font-size: small;
@@ -374,10 +410,10 @@ width: 5rem;
         display: none;
     }
 
-}
+} */
 
 /* Медиазапрос для мобильных устройств (480px - 768px) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .header {
         padding: 2rem;
         height: auto;
@@ -421,7 +457,7 @@ width: 5rem;
     .FAQ__summary {
         width: 100%;
     }
-}
+} */
 
 
 @media (max-width: 480px) {
